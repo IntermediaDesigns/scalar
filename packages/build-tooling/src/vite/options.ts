@@ -38,7 +38,7 @@ export function createViteBuildOptions(props: {
       pkgFile: props.pkgFile,
       options: props.options?.rollupOptions,
       emptyOutDir: false,
-    }),
+    }) as any,
   }
 }
 

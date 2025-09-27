@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from 'eslint-plugin-storybook'
+
 // @ts-check
 
 import eslint from '@eslint/js'
@@ -186,9 +189,7 @@ export default tslint.config(
         },
       ],
     },
-  },
-
-  // Need to disable unused vars as we always inject the complete props from the tiptap node
+  }, // Need to disable unused vars as we always inject the complete props from the tiptap node
   {
     files: ['packages/guide/src/editor/extensions/RichTextExtensions/**'],
     rules: {
@@ -215,7 +216,7 @@ export default tslint.config(
     rules: {
       'vue/no-undef-components': 'off',
     },
-  },
+  }, // prettier,
   {
     files: ['projects/static-docs/**'],
     languageOptions: {
@@ -224,5 +225,5 @@ export default tslint.config(
       },
     },
   },
-  // prettier,
+  storybook.configs['flat/recommended'],
 )

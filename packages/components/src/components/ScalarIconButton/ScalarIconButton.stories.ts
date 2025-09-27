@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import { ICONS } from '../ScalarIcon/icons'
 import ScalarIconButton from './ScalarIconButton.vue'

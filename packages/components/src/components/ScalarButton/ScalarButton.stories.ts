@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import { useLoadingState } from '../ScalarLoading'
 import ScalarButton from './ScalarButton.vue'
 import { ScalarIconAcorn } from '@scalar/icons'
