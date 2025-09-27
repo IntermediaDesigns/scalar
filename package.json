@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "turbo build",
-    "build:packages": "turbo --filter './packages/**' --concurrency=100% build",
+    "build:packages": "turbo --filter './packages/**' --concurrency=17% build",
     "build:integrations": "turbo --filter ./integrations/** build",
     "build:api-reference": "turbo --filter ./packages/api-reference build",
     "build:standalone": "pnpm --filter api-reference build:standalone",
@@ -58,7 +58,7 @@
     "clean:nuxt": "shx rm -rf \"**/.nuxt\"",
     "clean:dist": "shx rm -rf \"**/dist\"",
     "clean:turbo": "shx rm -rf \"**/.turbo\"",
-    "dev": "turbo dev --concurrency=100% --filter './examples/*' --filter './integrations/*' --filter=@scalar/nuxt --filter=@scalar/draggable --filter @scalar/components --filter @scalar/api-client --filter @scalar/nextjs-openapi",
+    "dev": "turbo dev --concurrency=15 --filter './examples/*' --filter=@scalar/draggable --filter @scalar/components --filter @scalar/api-client --filter @scalar/nextjs-openapi",
     "dev:client": "turbo dev --filter @scalar/api-client",
     "dev:client:desktop": "turbo dev --filter scalar-app",
     "dev:client:app": "turbo playground:app --filter @scalar/api-client",
