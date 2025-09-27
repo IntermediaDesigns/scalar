@@ -327,7 +327,8 @@ function updateHttpClient(value: string) {
 }
 
 /** Update the selected example and the operation ID */
-function handleExampleUpdate(value: string) {
+function handleExampleUpdate(value: string | undefined) {
+  if (!value) return
   selectedExampleKey.value = value
   operationId.value = operation.operationId
 

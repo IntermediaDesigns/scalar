@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { useActiveEntities, useWorkspace } from '@scalar/api-client/store'
-import {
-  combineRenameDiffs,
-  mutateSecuritySchemeDiff,
-} from '@scalar/api-client/views/Request/libs'
+import { mutateSecuritySchemeDiff } from '@scalar/api-client/views/Request/libs'
 import { getServersFromOpenApiDocument } from '@scalar/oas-utils/transforms'
 import type { OpenAPIV3_1 } from '@scalar/openapi-types'
 import type { ApiClientConfiguration } from '@scalar/types/api-reference'
